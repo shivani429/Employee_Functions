@@ -1,8 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse, JsonResponse
 from django.http import HttpResponseRedirect
-from flask import request
-from itsdangerous import Serializer
 from .models import Employee   
 
 # Employee Functions
