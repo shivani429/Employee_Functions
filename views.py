@@ -4,7 +4,6 @@ from django.http import HttpResponseRedirect
 from .models import Employee   
 
 # Employee Functions
-@login_required(login_url='login')
 def employee_list(request):
     employee_list = Employee.objects.all()
     e = {'employee_list':employee_list}
